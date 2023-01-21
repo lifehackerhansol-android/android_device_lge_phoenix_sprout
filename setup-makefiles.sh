@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=joan
+DEVICE=phoenix_sprout
 VENDOR=lge
 
 # Load extract_utils and do some sanity checks

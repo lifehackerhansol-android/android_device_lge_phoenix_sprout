@@ -1,7 +1,7 @@
-DEVICE_PATH := device/lge/joan
+DEVICE_PATH := device/lge/phoenix_sprout
 
 PRODUCT_SOONG_NAMESPACES += \
-    device/lge/joan
+    device/lge/phoenix_sprout
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay \
@@ -253,8 +253,8 @@ PRODUCT_PACKAGES += \
     init.target.rc
 
 PRODUCT_PACKAGES += \
-    fstab.joan \
-    ueventd.joan.rc
+    fstab.phoenix_sprout \
+    ueventd.phoenix_sprout.rc
 
 # IRSC
 PRODUCT_COPY_FILES += \
@@ -512,4 +512,4 @@ PRODUCT_PACKAGES += \
 #    WfdCommon
 
 # Inherit proprietary blobs
-$(call inherit-product-if-exists, vendor/lge/joan/joan-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/phoenix_sprout/phoenix_sprout-vendor.mk)

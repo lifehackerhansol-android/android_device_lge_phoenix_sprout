@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/lge/joan
+DEVICE_PATH := device/lge/phoenix_sprout
 
-TARGET_OTA_ASSERT_DEVICE := v30,joan,h930,h932
+TARGET_OTA_ASSERT_DEVICE := phoenix_sprout
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_h930_defconfig
@@ -24,7 +24,7 @@ TARGET_KERNEL_VERSION := 4.4
 TARGET_KERNEL_LLVM_BINUTILS := false
 
 # inherit from the proprietary version
--include vendor/lge/joan/BoardConfigVendor.mk
+-include vendor/lge/phoenix_sprout/BoardConfigVendor.mk
 
 # inherit from common lge
 -include device/lge/common/BoardConfigCommon.mk
@@ -163,7 +163,7 @@ TARGET_INIT_VENDOR_LIB := libinit_lge_msm8998
 TARGET_RECOVERY_DEVICE_MODULES := libinit_lge_msm8998
 
 # Kernel
-BOARD_KERNEL_CMDLINE := androidboot.hardware=joan user_debug=31 msm_rtb.filter=0x37
+BOARD_KERNEL_CMDLINE := androidboot.hardware=phoenix_sprout user_debug=31 msm_rtb.filter=0x37
 BOARD_KERNEL_CMDLINE += ehci-hcd.park=3 lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += sched_enable_hmp=1 sched_enable_power_aware=1
 BOARD_KERNEL_CMDLINE += service_locator.enable=1 swiotlb=2048 androidboot.configfs=true
@@ -198,7 +198,7 @@ TARGET_WLAN_POWER_STAT := "/sys/kernel/debug/wlan0/power_stats"
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/lge_touch/tap2wake"
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.joan
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.phoenix_sprout
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
