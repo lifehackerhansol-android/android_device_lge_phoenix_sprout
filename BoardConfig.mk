@@ -194,6 +194,7 @@ TARGET_WLAN_POWER_STAT := "/sys/kernel/debug/wlan0/power_stats"
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/lge_touch/tap2wake"
 
 # Recovery
+TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/recovery/recovery.wipe
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.phoenix_sprout
 
 # RIL
