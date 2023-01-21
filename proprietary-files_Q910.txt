@@ -209,6 +209,11 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
+# Graphics (Firmware)
+vendor/firmware/a540_zap.b01
+vendor/firmware/a540_zap.elf
+vendor/firmware/a540_zap.mdt
+
 # Improvetouch
 vendor/etc/hbtp/loader.cfg
 vendor/etc/hbtp/qtc800h.bin
