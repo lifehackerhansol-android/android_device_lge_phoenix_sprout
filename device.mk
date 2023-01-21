@@ -215,42 +215,43 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    hw_vari.sh \
-    init.baseband.sh \
     init.class_main.sh \
-    init.joan.hdmi.sh \
-    init.lge.usb.lao.sh \
+    init.crda.sh \
+    init.lge.usb.sh \
+    init.lge.zramswap.sh \
+    init.miniOS.crash.sh \
+    init.msm8998.crash.sh \
     init.qcom.class_core.sh \
+    init.qcom.coex.sh \
+    init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
+    init.qcom.sdio.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
+    init.qti.can.sh \
     init.qti.fm.sh \
     init.qti.qseecomd.sh
 
 PRODUCT_PACKAGES += \
-    hw_vari.rc \
     init.lge.audio.rc \
-    init.lge.bootproperty_trigger.rc \
-    init.lge.vendor.on_boot.rc \
-    init.lge.vendor.on_post_fs_data.rc \
-    init.lge.vendor.on_post_fs.rc \
-    init.lge.vendor.services.rc \
     init.qti.fm.rc \
+    init.time_daemon.rc \
+    init.wifi.runtime.rc \
+    init.wifi.rc \
     vendor.lge.power.rc
 
 PRODUCT_PACKAGES += \
-    init.baseband.proxy.rc \
-    init.joan_vendor.rc \
-    init.joan.rc \
     init.lge.fingerprints.rc \
     init.lge.power.rc \
-    init.lge.sensors.rc \
+    init.lge.sar_controller.rc \
     init.lge.usb.configfs.rc \
     init.lge.usb.rc \
-    init.msm8998.rc \
+    init.phoenix_sprout.rc \
+    init.phoenix_sprout_vendor.rc \
     init.qcom.rc \
-    init.qcom.usb.rc \
-    init.target.rc
+    init.target.rc \
+    init.wifi_ext.rc \
+    init.wifi.rc
 
 PRODUCT_PACKAGES += \
     fstab.phoenix_sprout \
