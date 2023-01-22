@@ -23,6 +23,29 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 
+# A/B
+PRODUCT_PACKAGES += \
+    otapreopt_script \
+    cppreopts.sh \
+    update_engine \
+    update_verifier
+
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.0-impl:64 \
+    android.hardware.boot@1.0-impl.recovery \
+    android.hardware.boot@1.0-service \
+    bootctrl.phoenix_sprout \
+    bootctrl.phoenix_sprout.recovery
+
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+    boot \
+    system \
+    vendor \
+    vbmeta \
+    dtbo
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
