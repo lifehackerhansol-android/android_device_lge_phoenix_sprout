@@ -267,11 +267,11 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.joan
+    android.hardware.light@2.0-service.phoenix_sprout
 
 # Live Display
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.joan
+    vendor.lineage.livedisplay@2.0-service.phoenix_sprout
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -446,7 +446,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.joan
+    vendor.lineage.touch@1.0-service.phoenix_sprout
 
 # TimeKeep
 PRODUCT_PACKAGES += \
@@ -494,7 +494,7 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf \
-    WifiOverlay.lge_msm8998
+    WifiOverlay.lge_phoenix_sprout
 
 # Wifi IPA
 PRODUCT_PACKAGES += \
