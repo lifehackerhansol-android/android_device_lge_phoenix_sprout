@@ -18,11 +18,6 @@ DEVICE_PATH := device/lge/phoenix_sprout
 
 TARGET_OTA_ASSERT_DEVICE := phoenix_sprout
 
-# Kernel
-TARGET_KERNEL_CONFIG := lineageos_phoenix_sprout_defconfig
-TARGET_KERNEL_VERSION := 4.4
-TARGET_KERNEL_LLVM_BINUTILS := false
-
 # inherit from the proprietary version
 -include vendor/lge/phoenix_sprout/BoardConfigVendor.mk
 
@@ -171,6 +166,8 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/lge/phoenix_sprout
+TARGET_KERNEL_CONFIG := lineageos_phoenix_sprout_defconfig
+TARGET_KERNEL_VERSION := 4.4
 TARGET_KERNEL_CLANG_VERSION := r416183b
 TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
 
