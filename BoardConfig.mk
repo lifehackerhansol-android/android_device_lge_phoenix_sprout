@@ -168,8 +168,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/lge/phoenix_sprout
 TARGET_KERNEL_CONFIG := lineageos_phoenix_sprout_defconfig
 TARGET_KERNEL_VERSION := 4.4
-TARGET_KERNEL_CLANG_VERSION := r416183b
-TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
+TARGET_KERNEL_CLANG_COMPILE := false
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
