@@ -1,7 +1,8 @@
 DEVICE_PATH := device/lge/phoenix_sprout
 
 PRODUCT_SOONG_NAMESPACES += \
-    device/lge/phoenix_sprout
+    $(DEVICE_PATH) \
+    hardware/lge
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay \
