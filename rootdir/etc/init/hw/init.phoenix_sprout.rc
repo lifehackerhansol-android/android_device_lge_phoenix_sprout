@@ -22,7 +22,6 @@ import /vendor/etc/init/hw/init.lge.fingerprints.rc
 import /vendor/etc/init/hw/init.lge.sar_controller.rc
 
 on init
-    mkdir /mnt/vendor/mpt 0775 system system
     mkdir /mnt/vendor/persist-lg 0771 system system
     mkdir /mnt/vendor/sns 0755 system system
     mkdir /mnt/vendor/power 0755 root root
@@ -82,10 +81,6 @@ on fs
     exec - system system -- /vendor/bin/cpfirmware widevine /mnt/vendor/persist-lg/firmware
 
 on post-fs
-    chown system system /mnt/vendor/mpt
-    chmod 0775 /mnt/vendor/mpt
-    restorecon_recursive /mnt/vendor/mpt
-
     chown system system /mnt/vendor/persist-lg
     chmod 0771 /mnt/vendor/persist-lg
     restorecon_recursive /mnt/vendor/persist-lg
